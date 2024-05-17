@@ -70,7 +70,7 @@ export default function Banner({ songCount, isFiltered = false }) {
         <Image
           loader={imageLoader}
           className={styles.avatar}
-          src="./assets/images/banner_image.webp"
+          src="./assets/images/avatar.png"
           width={250}
           height={250}
         />
@@ -78,7 +78,7 @@ export default function Banner({ songCount, isFiltered = false }) {
           {config.Name}
         </h1>
         <h1 className={"display-6 text-center " + styles.grandTitle}>
-          {isFiltered ? "已筛选的蝶歌" : "已收录的蝶歌" } <b>{songCount}</b> 首
+          {isFiltered ? "已筛选的水歌" : "已收录的水歌"} <b>{songCount}</b> 首
         </h1>
         <p className="text-center py-3 mb-xl-5 text-muted">
           可以点击歌名复制哦

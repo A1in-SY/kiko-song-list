@@ -79,7 +79,7 @@ export default function Home() {
       copy("点歌 ￥" + song.song_name);
       toast.success(`付费曲目 ${song.song_name} 成功复制到剪贴板!`);
     } else {
-      copy("宝宝 可以点一首【" + song.song_name + '】吗');
+      copy("点歌 " + song.song_name);
       toast.success(`${song.song_name} 成功复制到剪贴板!`);
     }
   };
@@ -143,7 +143,7 @@ export default function Home() {
 
   return (
     <div className={styles.outerContainer}>
-      <Link href={"https://live.bilibili.com/" + config.BiliLiveRoomID} passHref>
+      {/* <Link href={"https://live.bilibili.com/" + config.BiliLiveRoomID} passHref>
         <a target="_blank" style={{ textDecoration: "none", color: "#1D0C26" }}>
           <div className={styles.goToLiveDiv}>
             <div className={styles.cornerToggle}>
@@ -160,8 +160,8 @@ export default function Home() {
             </div>
           </div>
         </a>
-      </Link>
-      <Link href="https://vrp.live/member/Ameki" passHref>
+      </Link> */}
+      {/* <Link href="https://vrp.live/member/Ameki" passHref>
         <a target="_blank" style={{ textDecoration: "none", color: "#1D0C26" }}>
           <div className={styles.offCanvasToggleDiv}>
             <div className={styles.cornerToggle}>
@@ -178,7 +178,7 @@ export default function Home() {
             </div>
           </div>
         </a>
-      </Link>
+      </Link> */}
       <Container>
         <Head>
           <title>{config.Name}的歌单</title>
@@ -237,8 +237,8 @@ export default function Home() {
                       <tr>
                         <th></th>
                         <th>歌名</th>
-                        <th></th>
-                        <th>原唱歌手</th>
+                        <th>歌切</th>
+                        {/* <th>原唱歌手</th> */}
                         <th>语言</th>
                         <th>备注</th>
                       </tr>

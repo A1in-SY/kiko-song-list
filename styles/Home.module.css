@@ -44,7 +44,7 @@
 
 .songRow {
   /* cursor: url("/assets/cursor/pointer.png"), pointer; */
-  border-color:rgb(0 0 0 / 15%);
+  border-color: rgb(0 0 0 / 15%);
   transition: background-color 0.25s ease;
 }
 
@@ -202,7 +202,7 @@
 
 @media (min-width: 1201px) {
   .outerContainer {
-    background: url("/assets/images/background.jpg") center center no-repeat fixed;
+    background: url("/assets/images/background.png") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -260,7 +260,7 @@
 
 @media (max-width: 1200px) {
   .outerContainer {
-    background: url("/assets/images/background.jpg") center center no-repeat fixed;
+    background: url("/assets/images/background.png") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
