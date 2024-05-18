@@ -34,9 +34,9 @@ const loadMusicList = async ({src, dest}) => {
             let song_data = {}
             song_data.index = index++
             song_data.song_name = song_name || ''
-            song_data.artist = r.getCell(2).text || ''
-            song_data.language = r.getCell(3).text || ''
-            song_data.remarks = r.getCell(4).text || ''
+            // song_data.artist = r.getCell(2).text || ''
+            song_data.language = r.getCell(2).text || ''
+            song_data.remarks = r.getCell(3).text || ''
 
             assert(song_data.song_name.length > 0, JSON.stringify(song_data.song_name))
             song_data.initial = toPinyin(song_name).slice(0, 1).toUpperCase()
@@ -47,8 +47,8 @@ const loadMusicList = async ({src, dest}) => {
 
             song_data.sticky_top = 0
             song_data.paid = 0
-            song_data.BVID = r.getCell(5).text || ''
-            song_data.url = r.getCell(6).text || ''
+            song_data.BVID = r.getCell(4).text || ''
+            song_data.url = r.getCell(5).text || ''
 
             song_list.push(song_data)
         })
