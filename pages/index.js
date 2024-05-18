@@ -279,7 +279,7 @@ export default function Home() {
         ) : (
           <div></div>
         )}
-        <Link href={"https://github.com/Rndlab/vup-song-list-main"} passHref>
+        <Link href={"https://github.com/A1in-SY/kiko-song-list"} passHref>
           <footer className={styles.footer}>
             <img src="assets/images/github.png" alt="github"></img>
             <a>{config.Footer}</a>
